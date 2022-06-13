@@ -9,13 +9,13 @@ export function Header() {
                     <div className="flex items-center mx-auto">
                         <img
                             src="/android-chrome-192x192.png"
-                            alt="Company logo"
-                            className="h-16 pr-6"
+                            alt="Ravenous company logo"
+                            className="h-16 p-1 mr-4 rounded-full shadow-xl bg-slate-800 border-1"
                         />
-                        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                            <span className="block">Ravenous</span>
-                            <span className="block text-indigo-600">
-                                for your next meal
+                        <h2 className="text-4xl font-black tracking-tight text-gray-900">
+                            <span className="block leading-6">Ravenous</span>
+                            <span className="block text-2xl font-normal text-indigo-600">
+                                <em>for your next meal</em>
                             </span>
                         </h2>
                     </div>

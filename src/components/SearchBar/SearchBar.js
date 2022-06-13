@@ -14,7 +14,11 @@ class SearchBar extends React.Component {
                 <li
                     className="pl-2 text-sm text-gray-600 first:pl-0"
                     key={sortByOptionValue}>
-                    <a href={`?sort_by=${sortByOptionValue}`}>{sortByOption}</a>
+                    <a href={`?sort_by=${sortByOptionValue}`}>
+                        <span className="inline-flex items-center px-3 py-0.5 rounded-md text-xs font-medium bg-gray-100 text-gray-800">
+                            {sortByOption}
+                        </span>
+                    </a>
                 </li>
             );
         });
@@ -23,11 +27,11 @@ class SearchBar extends React.Component {
     render() {
         return (
             <div className="space-y-6 SearchBar">
-                <div className="SearchBar-sort-options">
-                    <ul className="flex space-x-2 divide-x-2">
+                {/* <div className="SearchBar-sort-options">
+                    <ul className="flex space-x-2">
                         {this.renderSortByOptions()}
                     </ul>
-                </div>
+                </div> */}
                 <div className="flex items-center justify-between space-x-6">
                     <div>
                         <label

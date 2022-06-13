@@ -1,4 +1,6 @@
 import React from 'react';
+import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
+import { StarIcon } from '@heroicons/react/solid';
 
 const business = {
     imageSrc:
@@ -42,7 +44,11 @@ class Business extends React.Component {
 
                         <div className="text-white Business-reviews">
                             <h3 className="rating">
-                                ⭐⭐⭐ ({business.rating}) stars
+                                <StarIcon
+                                    className="w-5 h-5 text-yellow-500"
+                                    aria-hidden="true"
+                                />
+                                ({business.rating}) stars
                             </h3>
                             <p>{business.reviewCount} reviews</p>
                         </div>
@@ -62,6 +68,10 @@ class Business extends React.Component {
                                 <a
                                     href={`mailto:${business.name}`}
                                     className="relative inline-flex items-center justify-center flex-1 w-0 py-4 -mr-px text-sm font-medium text-gray-700 border border-transparent rounded-bl-lg hover:text-gray-500">
+                                    <MailIcon
+                                        className="w-5 h-5 text-gray-400"
+                                        aria-hidden="true"
+                                    />
                                     <span className="ml-3">Email</span>
                                 </a>
                             </div>
@@ -69,6 +79,10 @@ class Business extends React.Component {
                                 <a
                                     href={`tel:${business.name}`}
                                     className="relative inline-flex items-center justify-center flex-1 w-0 py-4 text-sm font-medium text-gray-700 border border-transparent rounded-br-lg hover:text-gray-500">
+                                    <PhoneIcon
+                                        className="w-5 h-5 text-gray-400"
+                                        aria-hidden="true"
+                                    />
                                     <span className="ml-3">Call</span>
                                 </a>
                             </div>

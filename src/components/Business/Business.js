@@ -6,9 +6,7 @@ class Business extends React.Component {
     render() {
         return (
             <>
-                <li
-                    key={this.props.business.name + this.props.business.zipCode}
-                    className="col-span-1 bg-white divide-y divide-gray-200 rounded-lg shadow">
+                <li className="col-span-1 bg-white divide-y divide-gray-200 rounded-lg shadow">
                     <div
                         className="items-center px-4 py-2 image-container rounded-t-md"
                         style={{
